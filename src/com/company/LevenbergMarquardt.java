@@ -162,6 +162,12 @@ public class LevenbergMarquardt {
             throw new IllegalArgumentException("Different vector lengths");
         } else if( Y.getNumCols() != 1 /*|| X.getNumCols() != 1*/ ) {
             throw new IllegalArgumentException("Inputs must be a column vector");
+        } else if (
+                X.getNumCols() != initParam.getNumRows() ||
+                X.getNumRows() != Y.getNumRows() ||
+                Y.getNumCols() != Y.getNumCols()
+                ) {
+            throw new IllegalArgumentException("Matrix dimension do not match");
         }
 
         int numParam = initParam.getNumElements();
