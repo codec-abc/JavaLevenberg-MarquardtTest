@@ -930,8 +930,15 @@ modelPoints
 0.189 0.135 0
 0.216 0.135 0
 
-fx = 551.825
-fy = 515.05
-cx = 326
-cy = 270.916
-Calibration succeeded. avg re projection error = 2.34343
+result
+
+fx
+551.825
+fy
+515.05
+cx
+326
+cy
+270.916
+
+# Calibration succeeded. avg re projection error = 2.34343
